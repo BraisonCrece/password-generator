@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/mystyles.css" />
+    <script src="scripts/myscript.js" defer></script>
+    <title>Generador Contraseñas</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Generador de Contraseñas</h2>
+      <div class="resultado-contenedor">
+        <span id="resultado"></span>
+        <button class="btn" id="portapapeles">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="tipos">
+        <div class="tipo">
+          <label>Longitud de la Contraseña</label>
+          <input
+            type="number"
+            id="longitud"
+            min="8"
+            max="20"
+            value="12"
+            required
+          />
+        </div>
+        <div class="tipo">
+          <label>Incluir letras mayúsculas</label>
+          <input type="checkbox" id="mayusculas" checked />
+        </div>
+        <div class="tipo">
+          <label>Incluir letras minúsculas</label>
+          <input type="checkbox" id="minusculas" checked />
+        </div>
+        <div class="tipo">
+          <label>Incluir números</label>
+          <input type="checkbox" id="numeros" checked />
+        </div>
+        <div class="tipo">
+          <label>Incluir símbolos</label>
+          <input type="checkbox" id="simbolos" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generar">Generar contraseña</button>
+    </div>
+  </body>
+</html>
